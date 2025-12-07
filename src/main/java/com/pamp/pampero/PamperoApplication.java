@@ -2,8 +2,9 @@ package com.pamp.pampero;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
+@SpringBootApplication @ComponentScan(basePackages = {"com.pamp.pampero.controller"})
 public class PamperoApplication {
 
 	public static void main(String[] args) {
